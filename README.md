@@ -10,9 +10,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn api.main:app --reload
 
-# How to run it in VS Code
+How to run it in VS Code
 
-## Create virtual environment
+Create virtual environment
 
 Mac/Linux:
 ```bash
