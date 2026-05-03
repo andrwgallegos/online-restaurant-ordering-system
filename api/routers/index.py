@@ -1,4 +1,5 @@
 from . import (
+    checkout,
     customers,
     menu_items,
     order_items,
@@ -6,6 +7,7 @@ from . import (
     payments,
     promotions,
     recipes,
+    reports,
     resources,
     reviews,
 )
@@ -22,3 +24,5 @@ def load_routes(app):
     app.include_router(order_items.router)
     app.include_router(payments.router)
     app.include_router(reviews.router)
+    app.include_router(checkout.router)
+    app.include_router(reports.router)
