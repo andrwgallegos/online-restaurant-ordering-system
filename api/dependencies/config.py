@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 class conf:
-    db_engine = os.getenv("DB_ENGINE", "sqlite").lower()
+    db_engine = os.getenv("DB_ENGINE", "mysql").lower()
     sqlite_path = os.getenv(
         "SQLITE_PATH",
         str(Path(__file__).resolve().parents[1] / "restaurant_ordering.db")
